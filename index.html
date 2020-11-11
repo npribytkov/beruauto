@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Beru Auto</title>
+        <meta name="theme-color" content="#fff">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <header>
+    <div class="gradient"></div>
+
+    <div class="container">
+        <div class="header-block">
+            <div class="text">получи автокредит<br>на выгодных условиях!</div>
+            <div class="form-wrap">
+            <div class="main-card">
+                <form action="#" enctype="multipart/form-data" class="main-form main-form--default" method="POST" novalidate="novalidate">
+                    <div class="main-form__inner">
+                        <div class="main-form__title">ЗАявка на кредит</div>
+                        <div class="main-form__controls">
+                            <div class="main-form__cols">
+                                <div class="main-form__col">
+                                    <div class="main-form__control-wrap">
+                                        <label class="input-label">Стоимость авто</label>
+                                        <input type="text" name="property-PRICE" id="car_price" class="main-form__control main-form__control--bold" value="0 руб." aria-invalid="false">
+                                        <div class="main-form__slider-wrap">
+                                            <div id="car_price_slider"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-form__control-wrap">
+                                        <label class="input-label">Первоначальный взнос</label>
+                                        <input type="text" name="property-FIRSTPAY" id="firstpay" class="main-form__control main-form__control--bold" value="">
+                                        <div class="main-form__slider-wrap">
+                                            <div id="credit_inital_pay_slider"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-form__control-wrap">
+                                        <label class="input-label">Срок кредитования</label>
+                                        <input type="text" name="property-TERM" id="credit_term" class="main-form__control main-form__control--bold" value=" мес.">
+                                        <div class="main-form__slider-wrap">
+                                            <div id="credit_term_slider"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main-form__col">
+                                    <div class="main-form__control-wrap">
+                                        <label class="input-label">Регион</label>
+                                        <select name="property-REGION" class="main-form__control req">
+                                            <option value="" selected="" disabled="">Выберите регион регистрации</option>
+                                            <option value="Оренбургская область">Оренбургская область</option>
+                                            <option value="Башкортостан">Башкортостан</option>
+                                            <option value="Алтайский край">Алтайский край</option>
+                                            <option value="Архангельская область">Архангельская область</option>
+                                            <option value="Астраханская область">Астраханская область</option>
+                                            <option value="Белгородская область">Белгородская область</option>
+                                            <option value="Брянская область">Брянская область</option>
+                                            <option value="Бурятия">Бурятия</option>
+                                            <option value="Владимирская область">Владимирская область</option>
+                                            <option value="Волгоградская область">Волгоградская область</option>
+                                            <option value="Вологодская область">Вологодская область</option>
+                                            <option value="Воронежская область">Воронежская область</option>
+                                            <option value="Забайкальский край">Забайкальский край</option>
+                                            <option value="Ивановская область">Ивановская область</option>
+                                            <option value="Иркутская область">Иркутская область</option>
+                                            <option value="Калининградская область">Калининградская область</option>
+                                            <option value="Калмыкия">Калмыкия</option>
+                                            <option value="Калужская область">Калужская область</option>
+                                            <option value="Карелия">Карелия</option>
+                                            <option value="Кемеровская область">Кемеровская область</option>
+                                            <option value="Кировская область">Кировская область</option>
+                                            <option value="Костромская область">Костромская область</option>
+                                            <option value="Краснодарский край">Краснодарский край</option>
+                                            <option value="Красноярский край">Красноярский край</option>
+                                            <option value="Курганская область">Курганская область</option>
+                                            <option value="Курская область">Курская область</option>
+                                            <option value="Ленинградская область">Ленинградская область</option>
+                                            <option value="Липецкая область">Липецкая область</option>
+                                            <option value="Марий Эл">Марий Эл</option>
+                                            <option value="Мордовия">Мордовия</option>
+                                            <option value="Москва">Москва</option>
+                                            <option value="Московская область">Московская область</option>
+                                            <option value="Мурманская область">Мурманская область</option>
+                                            <option value="Нижегородская область">Нижегородская область</option>
+                                            <option value="Новгородская область">Новгородская область</option>
+                                            <option value="Новосибирская область">Новосибирская область</option>
+                                            <option value="Омская область">Омская область</option>
+                                            <option value="Орловская область">Орловская область</option>
+                                            <option value="Пензенская область">Пензенская область</option>
+                                            <option value="Пермский край">Пермский край</option>
+                                            <option value="Псковская область">Псковская область</option>
+                                            <option value="Республика Алтай">Республика Алтай</option>
+                                            <option value="Республика Коми">Республика Коми</option>
+                                            <option value="Ростовская область">Ростовская область</option>
+                                            <option value="Рязанская область">Рязанская область</option>
+                                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                                            <option value="Самарская область">Самарская область</option>
+                                            <option value="Саратовская область">Саратовская область</option>
+                                            <option value="Свердловская область">Свердловская область</option>
+                                            <option value="Смоленская область">Смоленская область</option>
+                                            <option value="Ставропольский край">Ставропольский край</option>
+                                            <option value="Тамбовская область">Тамбовская область</option>
+                                            <option value="Татарстан">Татарстан</option>
+                                            <option value="Тверская область">Тверская область</option>
+                                            <option value="Томская область">Томская область</option>
+                                            <option value="Тульская область">Тульская область</option>
+                                            <option value="Тыва">Тыва</option>
+                                            <option value="Тюменская область">Тюменская область</option>
+                                            <option value="Удмуртия">Удмуртия</option>
+                                            <option value="Ульяновская область">Ульяновская область</option>
+                                            <option value="Ханты-Мансийский АО">Ханты-Мансийский АО</option>
+                                            <option value="Челябинская область">Челябинская область</option>
+                                            <option value="Чувашия">Чувашия</option>
+                                            <option value="Ямало-Ненецкий АО">Ямало-Ненецкий АО</option>
+                                            <option value="Ярославская область">Ярославская область</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="main-form__control-wrap">
+                                        <label class="input-label">Ф.И.О</label>
+                                        <input type="text" name="field-NAME" class="main-form__control req" placeholder="Введите ФИО" value="">
+                                    </div>
+
+                                    <div class="main-form__control-wrap">
+                                        <label class="input-label">Телефон</label>
+                                        <input type="tel" name="property-PHONE" class="main-form__control req" placeholder="+7 (___) ___ - __ - __" value="" im-insert="true">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-form__control-wrap main-form__submit-wrap">
+                                <button type="submit" class="main-form__submit btn-green">Отправить заявку</button>
+                            </div>
+
+                            <div class="main-form__control-wrap main-form__agree-wrap">
+                                <input class="styled-checkbox" type="checkbox" name="agree" id="main-form-agree" checked="">
+                                <label for="main-form-agree" class="styled-checkbox-label">
+                                    <span class="styled-checkbox-label__box"></span>
+                                    <span class="styled-checkbox-label__text">Согласие на обработку персональных данных</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</header>
+<div class="header-bottom">
+    <div class="container">
+        <div class="list">
+        <div class="item">
+            <div class="ico"><img src="../img/ico-1.png" alt=""></div>
+            <div class="text">Автокредит по двум документам!</div>
+        </div>
+        <div class="item">
+            <div class="ico"><img src="../img/ico-2.png" alt=""></div>
+            <div class="text">Ставка по кредиту<br>
+                от <span>5,5 %</span> годовых!</div>
+        </div>
+        <div class="item">
+            <div class="ico"><img src="../img/ico-3.png" alt=""></div>
+            <div class="text">Госпрограмма<br> вернем <span>10 %</span> </div>
+        </div>
+        <div class="item">
+            <div class="ico"><img src="../img/ico-4.png" alt=""></div>
+            <div class="text">Полис КАСКО или зимняя резина в подарок!</div>
+        </div>
+        <div class="item">
+            <div class="ico"><img src="../img/ico-5.png" alt=""></div>
+            <div class="text">Постановка на учет в ГИБДД</div>
+        </div>
+        <div class="item">
+            <div class="ico"><img src="../img/ico-6.png" alt=""></div>
+            <div class="text">Выгодная программа утилизации!</div>
+        </div>
+        <div class="item">
+            <div class="ico"><img src="../img/ico-7.png" alt=""></div>
+            <div class="text">Первоначальный взнос</div>
+        </div>
+        <div class="item">
+            <div class="ico"><img src="../img/ico-8.png" alt=""></div>
+            <div class="text">Решение по кредиту составляет 5 минут!</div>
+        </div>
+    </div>
+    </div>
+</div>
+        <main>
+    <div class="container">
+        <div class="our-plus block">
+            <h2><span>НАШИ</span> ПРЕИМУЩЕСТВА</h2>
+            <div class="row">
+                <div class="">
+                    <ul class="list">
+                        <li>Автокредит без справок и визита в банк</li>
+                        <li>Размер кредита от 60 000 руб. до 3 000 000 руб.</li>
+                        <li>Процентная ставка по кредиту от 5,5% годовых</li>
+                        <li>Доступны программы кредитования без первоначального взноса</li>
+                        <li>Срок кредитования от 6 месяцев до 7 лет</li>
+                        <li>Обработка заявок 24/7, предварительное решение о выдаче кредита 5 минут</li>
+                    </ul>
+                </div>
+                <div class="bg-car">
+                    <img src="./img/auto.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="partners block">
+            <h2><span>Наши Банки</span> партнеры</h2>
+            <div class="partners-list">
+                <ul>
+                    <li><img src="./img/partners-1.png" alt=""></li>
+                    <li><img src="./img/partners-2.png" alt=""></li>
+                    <li><img src="./img/partners-3.png" alt=""></li>
+                    <li><img src="./img/partners-4.png" alt=""></li>
+                    <li><img src="./img/partners-5.png" alt=""></li>
+                    <li><img src="./img/partners-6.png" alt=""></li>
+                    <li><img src="./img/partners-7.png" alt=""></li>
+                    <li><img src="./img/partners-8.png" alt=""></li>
+                    <li><img src="./img/partners-9.png" alt=""></li>
+                    <li><img src="./img/partners-10.png" alt=""></li>
+                    <li><img src="./img/partners-11.png" alt=""></li>
+                    <li><img src="./img/partners-12.png" alt=""></li>
+                    <li><img src="./img/partners-13.png" alt=""></li>
+                    <li><img src="./img/partners-14.png" alt=""></li>
+                    <li><img src="./img/partners-15.png" alt=""></li>
+                    <li><img src="./img/partners-16.png" alt=""></li>
+                </ul>
+            </div>
+        </div>
+        <div class="dignity block">
+           <div class="list">
+               <div class="item">
+                   <div class="ico"><img src="./img/ico-footer-1.png" alt=""></div>
+                   <div class="text">Ваши данные надежно защищены</div>
+               </div>
+               <div class="item">
+                   <div class="ico"><img src="./img/ico-footer-2.png" alt=""></div>
+                   <div class="text">Время ожидания ответа 5 минут</div>
+               </div>
+               <div class="item">
+                   <div class="ico"><img src="./img/ico-footer-3.png" alt=""></div>
+                   <div class="text">24 часа 7 дней в неделю</div>
+               </div>
+           </div>
+        </div>
+    </div>
+</main>
+        <footer>
+    <div class="gradient"></div>
+    <div class="container">
+        <div class="text">
+        <p>Обращаем ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких условиях не являетсяпубличной офертой,
+            определяемой положениями ч. 2 ст. 437 Гражданского кодекса Российской Федерации. Все персональные данные не подлежатпередачи третьим лицам и защищены
+            федеральным законом Российской Федерации от 27 июля 2006 г. № 152-ФЗ. ООО "Драйв Плюс", 2019. Банк-партнер: ООО «Русфинанс Банк». Лицензия ЦБ РФ №1792
+            от 13.02.2013. Доступная сумма кредита от 60 000 руб. до 3 000 000 руб. Первоначальный взнос по кредиту от 0% до 70%. Сумма ежемесячного платежа от 1362 руб.
+            до 589 987 руб., без комиссий. Срок кредита от 6 мес. до 7 лет. Процентная ставка по кредиту от 3,9%. Автокредит предоставляется при условии страхования жизни, а также
+            ущерба угона. Ставка по кредиту 3,9% достигается путем внесения от 70% стоимости авто в качестве первого взноса со сроком кредитования 12 месяцев, при предоставлении
+            полного пакета документов (справка с работы, паспорт, водительское удостоверение). Действует на автомобили Mazda 3, Mazda 6, Mazda CX5, Mazda CX9. Подробнее на сайте
+            https://www.rusfinancebank.ru/ru/mazda_finance.html.Пример расчета при покупке автомобиля в кредит: При покупке Mazda 6 стоимостью 1 531 000 руб., сроком кредита
+            12 месяцев и первом взносе 70% будут действовать следующие условия: сумма кредитования - 459 300 руб., ставка по кредиту - 3,9%, ежемесячный платеж - 39 088 руб., без
+            дополнительных комиссий, с обязательным страхованием жизни и здоровья, а также ущерба угона.</p>
+    </div>
+    </div>
+</footer>
+        <script src="js/main.js"></script>
+        <script src="js/vendor.js"></script>
+    </body>
+</html>
